@@ -246,3 +246,11 @@ li a {
     transform: rotate(360deg);
   }
 }
+
+.title {
+  color: red;
+}
+
+.card > span {
+  font-weight: 700;
+}

@@ -17,7 +17,7 @@ const CourseSearch = ({ getSearchResults }) => {
       <input
         className="search-input"
         type="text"
-        placeholder="Search Courses"
+        placeholder="Search Courses (By Course Title)"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />

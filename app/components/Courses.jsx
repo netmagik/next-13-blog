@@ -12,7 +12,7 @@ const Courses = ({ courses }) => {
 
   const data = courses.map((course) => (
     <div className="card" key={course.id}>
-      {course.title}
+      <span className="title">Course Title:</span> {course.title}
       <h2>{course.level}</h2>
       <small>Level: {course.level}</small>
       <p>{course.description}</p>

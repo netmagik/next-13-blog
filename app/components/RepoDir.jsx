@@ -3,7 +3,7 @@ import { list } from "postcss";
 
 async function fetchRepoContents(name) {
   // delay by 3 seconds
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  //await new Promise((resolve) => setTimeout(resolve, 3000));
 
   const response = await fetch(
     `https://api.github.com/repos/netmagik/${name}/contents`,
@@ -14,7 +14,7 @@ async function fetchRepoContents(name) {
     }
   );
   const contents = await response.json();
-
+console.log(contents)
   return contents;
 }
 
@@ -24,7 +24,7 @@ const RepoDirs = async ({ name }) => {
 
   const data = dirs.map((each) => (
     <p key={each.name}>
-      <Link href={`/code/repos/${name}/${each.path}`}>{each.name}</Link>
+      <Link href={each.html_url}>{each.name}</Link>
     </p>
   ));
 

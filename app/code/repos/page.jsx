@@ -7,7 +7,7 @@ async function getRepos() {
     const res = await fetch('https://api.github.com/users/netmagik/repos')
 
     // wait 1 second to watch the loading spinner
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    //await new Promise((resolve) => setTimeout(resolve, 1000))
     
     const repos = await res.json()
     return repos

@@ -19,6 +19,6 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.34.0"
+    "@netlify/plugin-nextjs": "^4.35.0"
   }
 }

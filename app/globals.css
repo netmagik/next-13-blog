@@ -63,17 +63,18 @@ li a {
   align-items: center;
   background-color: #0047ab;
   color: #fff;
-  padding: 1rem;
+  padding: 3rem;
   border-bottom: 5px solid #fff;
 }
 
 .logo {
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin: 2rem;
 }
 
 .logo a {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  letter-spacing: 1px;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
@@ -83,10 +84,16 @@ li a {
   margin: 0 0.5rem 0 0.5rem;
   color: #fff;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .links a:hover {
   text-decoration: underline;
+}
+
+.links .highlight {
+  border: 2px solid white;
+  padding: 5px 10px;
 }
 
 .search-form {

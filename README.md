@@ -1,12 +1,32 @@
 # Next.js 13 Blog Example
 
 Using Client and Server Components, app directory.
+**[next-13-blog.netlify.app](https://next-13-blog.netlify.app/)**
 
+--- 
+**Based on:**
 [Next 13 Crash Course](https://www.youtube.com/watch?v=Y6KDk5iyrYE)
 
-## Getting Started
+---
 
-First, run the development server:
+## Run Locally
+
+Clone the project:
+```
+git clone https://github.com/netmagik/next-13-blog.git
+```
+
+Go to the project directory
+```
+cd next-13-blog
+```
+
+Install dependencies
+```
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
@@ -22,7 +42,6 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 [http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.js`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 

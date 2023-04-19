@@ -8,3 +8,8 @@
 [dev] 
     command = "next dev"
     targetPort = 3000
+
+
+[[edge_functions]]
+function = "set-cookies"
+path = "/test"

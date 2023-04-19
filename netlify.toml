@@ -12,4 +12,4 @@
 
 [[edge_functions]]
 function = "set-cookies"
-path = "/test"
+path = "/cookie"

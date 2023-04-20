@@ -13,3 +13,4 @@
 [[edge_functions]]
 function = "set-cookies"
 path = "/cookie"
+cache = "manual"

@@ -6,11 +6,18 @@ const Cookie = () => {
 
   const action = getCookies.get("action");
   return (
-    <h1>
-      {action?.value
-        ? `Cookie's value is: "${action.value}"`
-        : "No cookie has been set. Refresh this page to see the cookie value"}
-    </h1>
+    <div className="cookie">
+      {action?.value ? (
+        <p>
+          Cookie's value from the Edge Function is:
+          <span className="cookie-value"> {action.value}</span>
+        </p>
+      ) : (
+        <p>
+          No cookie has been set. <strong>Refresh</strong> this page to see the cookie value
+        </p>
+      )}
+    </div>
   );
 };
 

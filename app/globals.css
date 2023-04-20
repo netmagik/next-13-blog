@@ -261,3 +261,20 @@ li a {
 .card > span {
   font-weight: 700;
 }
+
+.cookie {
+  display: grid;
+  place-content: center;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+.cookie-value {
+  margin: 10px;
+  display: block;
+  color: #BADA55;
+  padding: 10px 20px;
+  border: 1px solid #BADA55
+}

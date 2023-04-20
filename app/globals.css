@@ -278,3 +278,14 @@ li a {
   padding: 10px 20px;
   border: 1px solid #BADA55
 }
+
+@media (max-width: 612px) {
+  .links {
+    display: grid;
+    grid-gap: 5px;
+    text-align: center;
+  }
+  .links .highlight {
+    padding: 0;
+  }
+}

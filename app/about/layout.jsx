@@ -3,7 +3,7 @@ import React from "react";
 const AboutLayout = ({ children }) => {
   return (
     <div>
-      <h1>This is About Layout</h1>
+      <h1>This is a Layout for About and Team</h1>
       {children}
     </div>
   );

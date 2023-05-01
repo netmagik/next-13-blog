@@ -7,31 +7,32 @@ async function fetchRepoContents(name) {
 
   const response = await fetch(
     `https://api.github.com/repos/netmagik/${name}/contents`,
-    {
-      next: {
-        revalidate: 60,
-      },
-    }
+    // {
+    //   next: {
+    //     revalidate: 60,
+    //   },
+    // }
   );
   const contents = await response.json();
-console.log(contents)
+//console.log(contents)
   return contents;
 }
 
 const RepoDirs = async ({ name }) => {
   const contents = await fetchRepoContents(name);
-  const dirs = contents.filter((content) => content.type === "dir");
-
-  const data = dirs.map((each) => (
-    <p key={each.name}>
-      <Link href={each.html_url}>{each.name}</Link>
-    </p>
-  ));
+  
+  //const dirs = contents.filter((content) => content.type === "dir");
+  console.log(contents)
+  // const data = dirs.map((each) => (
+  //   <p key={each.name}>
+  //     <Link href={each.html_url}>{each.name}</Link>
+  //   </p>
+  // ));
 
   return (
     <>
       <h3>Directories</h3>
-      {data}
+      {/* {data} */}
     </>
   );
 };

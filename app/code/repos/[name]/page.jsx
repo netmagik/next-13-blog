@@ -3,6 +3,15 @@ import Link from 'next/link';
 import Repo from '@/app/components/Repo';
 import RepoDirs from '@/app/components/RepoDir';
 
+
+// Create static params for SSG 
+export async function generateStaticParams() {
+  const res = await fetch("https://api.github.com/users/netmagik/repos");
+  const repos = await res.json();
+  return repos.map(repo => ({ name: repo.id.toString()}));
+}
+
+
 const RepoPage = ({ params: { name } }) => {
   return (
     <div className='card'>
@@ -19,3 +28,5 @@ const RepoPage = ({ params: { name } }) => {
   );
 };
 export default RepoPage;
+
+
